@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+iframe{
+  width: 450px;
+  height: 300px;
+}
+
+body{
+  background-image: url(./image/photo1.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center{
+ text-align: center;
+ font-size: 70px;
+ color: blanchedalmond;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.box {
+  margin: 25px;
+  border: 1px solid blanchedalmond;
+}
+
+#footer {
+  font-size: 20px;
+  background-color: #241f1f;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  line-height: 50px;
+  color: #aaa;
+  text-align: center;
+  width: 100%;
+}
+
+#footer span{
+  color: red;
+}
+
+#footer a{
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 1024px) {
+  iframe{
+    width: 280px;
+    height: 200px;
+  }
+
+  .box {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid blanchedalmond;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  iframe{
+    width: 200px;
+    height: 150px;
+  }
+
+  .box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid blanchedalmond;
+  }
+}
